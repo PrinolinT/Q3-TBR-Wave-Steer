@@ -211,7 +211,7 @@ async function drawPrize() {
 
 for (
   let i = 0;
-  i < 5;
+  i < 307;
   i++
 ) {
   prizePool.push(
@@ -368,6 +368,32 @@ document
   .addEventListener(
   "click",
   () => {
+
+    // CHECK ALL QUESTIONS ANSWERED
+
+const requiredQuestions = [
+  "q1",
+  "q2",
+  "q3"
+];
+
+const unanswered =
+  requiredQuestions.filter(
+    question =>
+      !document.querySelector(
+        `input[name="${question}"]:checked`
+      )
+  );
+
+if (unanswered.length > 0) {
+
+  alert(
+    "Please answer all questions before submitting."
+  );
+
+  return;
+
+}
 
     // CORRECT ANSWERS
 const answers = {
