@@ -20,12 +20,12 @@ from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
 
 const firebaseConfig = {
 
-  apiKey: "AIzaSyBEr60ly1rGZThmFI9DamgW8xzgxJ6wwl8",
-  authDomain: "q3-tbr-wave---1.firebaseapp.com",
-  projectId: "q3-tbr-wave---1",
-  storageBucket: "q3-tbr-wave---1.firebasestorage.app",
-  messagingSenderId: "436232639814",
-  appId: "1:436232639814:web:f7a3cfbb423701c6318147"
+  apiKey: "AIzaSyCjWhhMzy0SMI3ZeD_Xsfdo0UPyFPxG57Q",
+  authDomain: "q3-tbr-wave-steer.firebaseapp.com",
+  projectId: "q3-tbr-wave-steer",
+  storageBucket: "q3-tbr-wave-steer.firebasestorage.app",
+  messagingSenderId: "16883148372",
+  appId: "1:16883148372:web:0b482607f3016dfa0eefc1"
 
 };
 
