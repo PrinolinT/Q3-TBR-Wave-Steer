@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>
+    Admin Dashboard
+  </title>
+
+  <style>
+
+    body {
+
+      font-family: Arial, sans-serif;
+
+      padding: 30px;
+
+      background: #f5f5f5;
+
+    }
+
+    .card {
+
+      background: white;
+
+      padding: 20px;
+
+      margin-bottom: 15px;
+
+      border-radius: 10px;
+
+    }
+
+    h1 {
+
+      margin-bottom: 30px;
+
+    }
+
+    .stat {
+
+      font-size: 24px;
+
+      font-weight: bold;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<h1>
+  Q3 TBR Wave Dashboard - Steer
+</h1>
+
+<div class="card">
+  Total Participants:
+  <div
+    id="participantsCount"
+    class="stat">
+    Loading...
+  </div>
+</div>
+
+<div class="card">
+  Passed Quiz:
+  <div
+    id="passedCount"
+    class="stat">
+    Loading...
+  </div>
+</div>
+
+<div class="card">
+  Failed Quiz:
+  <div
+    id="failedCount"
+    class="stat">
+    Loading...
+  </div>
+</div>
+
+<div class="card">
+  Lucky Draw Entries:
+  <div
+    id="luckyDrawCount"
+    class="stat">
+    Loading...
+  </div>
+</div>
+
+<div class="card">
+  Flashlights Remaining:
+  <div
+    id="flashlightCount"
+    class="stat">
+    Loading...
+  </div>
+</div>
+
+<div class="card">
+  Phone Stands Remaining:
+  <div
+    id="capCount"
+    class="stat">
+    Loading...
+  </div>
+</div>
+
+<div class="card">
+  Jackets Remaining:
+  <div
+    id="jacketCount"
+    class="stat">
+    Loading...
+  </div>
+</div>
+
+<div class="card">
+
+  <h2>
+    Instant Winners
+  </h2>
+
+  <table
+    id="winnersTable"
+    border="1"
+    cellpadding="10"
+    cellspacing="0"
+    width="100%">
+
+    <thead>
+
+      <tr>
+
+        <th>Name</th>
+<th>Account Number</th>
+<th>Store</th>
+<th>Prize</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+    </tbody>
+
+  </table>
+
+</div>
+
+  <div class="card">
+
+  <h2>
+    Most Missed Questions
+  </h2>
+
+  <table
+    id="questionsTable"
+    border="1"
+    cellpadding="10"
+    cellspacing="0"
+    width="100%">
+
+    <thead>
+
+      <tr>
+
+        <th>Question</th>
+
+        <th>Incorrect Count</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+    </tbody>
+
+  </table>
+
+</div>
+
+<div class="card">
+
+  <h2>
+    Export Data
+  </h2>
+
+  <button id="exportExcel">
+  Export Excel Report
+</button>
+
+</div>
+
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+  
+<script
+  type="module"
+  src="admin.js">
+</script>
+
+</body>
+
+</html>

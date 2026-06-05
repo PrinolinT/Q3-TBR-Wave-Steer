@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0"/>
+
+  <title>Dunlop Spin & Win</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- Background Overlay -->
+
+  <div class="background-overlay"></div>
+
+  <!-- Main App -->
+
+  <div class="app-container">
+
+    <!-- Logo -->
+
+    <div class="logo-container">
+
+      <img
+        src="assets/dunlop-logo.png"
+        alt="Dunlop Logo"
+        class="logo"
+      >
+
+    </div>
+
+    <!-- SCREEN 1 -->
+    <!-- Customer Details -->
+
+	  
+    <section id="screen1" class="screen active">
+
+      <h1>Spin & Win</h1>
+
+      <p class="subtitle">
+        Enter your details below to participate.
+      </p>
+
+      <input
+        type="text"
+        id="name"
+        placeholder="Name & Surname"
+      >
+
+      <input
+        type="text"
+        id="storename"
+        placeholder="Company / Store Name"
+      >
+
+      <input
+  type="text"
+  id="accnumber"
+  placeholder="Account Number"
+  maxlength="6"
+>
+
+	<input
+  type="tel"
+  id="phonenumber"
+  placeholder="Cellphone Number"
+  inputmode="tel"
+>
+
+<select id="salesRep">
+
+  <option value="">
+    Select Sales Representative
+  </option>
+
+  <option value="Albert Reitz">
+    Albert Reitz
+</option>
+
+<option value="Clint Stellenboom">
+    Clint Stellenboom
+</option>
+
+<option value="Wessel Smith">
+    Wessel Smith
+</option>
+
+<option value="Jeremiah Govender">
+    Jeremiah Govender
+</option>
+
+<option value="Malik Balgoobind">
+    Malik Balgoobind
+</option>
+
+<option value="Gerhard Van Vuuren">
+    Gerhard Van Vuuren
+</option>
+
+<option value="Craig September">
+    Craig September
+</option>
+
+<option value="Gered Govender">
+    Gered Govender
+</option>
+
+<option value="Imraan Ebrahim">
+    Imraan Ebrahim
+</option>
+
+<option value="Neal Pryba">
+    Neal Pryba
+</option>
+
+</select>
+
+      <!-- Terms -->
+
+      
+<div class="checkbox-group">
+
+  <input
+    type="checkbox"
+    id="termsCheck"
+  >
+
+  <label for="termsCheck">
+    I accept the
+  </label>
+
+  <span
+    id="openTerms"
+    class="terms-link"
+  >
+    Terms & Conditions
+  </span>
+
+</div>
+
+<button
+  id="screen1Btn"
+  class="primary-btn"
+>
+  CONTINUE
+</button>
+
+    </section>
+
+    <!-- SCREEN 2 -->
+    <!-- Questions -->
+
+    <section id="screen2" class="screen hidden">
+
+      <h2>Answer The Questions</h2>
+
+      <div class="question-group">
+
+  <label>
+    <strong>Scenario 1 – Long Haul Highway</strong><br><br>
+
+    A fleet runs Durban to Johannesburg routes daily transporting FMCG goods on all paved surfaces using Volvo FH440 trucks with super links on national highways only.
+
+    <br><br>
+
+    <strong>Question:</strong>
+    Which drive tyre do you recommend?
+  </label>
+
+  <div class="option-group">
+    <input type="radio" name="q1" value="SP160">
+    SP160
+  </div>
+
+  <div class="option-group">
+    <input type="radio" name="q1" value="SP925A">
+    SP925A
+  </div>
+
+  <div class="option-group">
+    <input type="radio" name="q1" value="SP320A">
+SP320A
+  </div>
+
+  <div class="option-group">
+    <input type="radio" name="q1" value="SP431W">
+    SP431W
+  </div>
+
+</div>
+
+
+<div class="question-group">
+
+  <label>
+    <strong>Scenario 2 – Regional Light Off-Road</strong><br><br>
+
+    Fleet operates Johannesburg to Rustenburg mining areas using 6x4 tractors with side tippers as the trailer, loading in gravel yards and delivering to paved warehouses.
+
+    <br><br>
+
+    <strong>Question:</strong>
+    Which drive tyre do you recommend?
+  </label>
+
+  <div class="option-group">
+    <input type="radio" name="q2" value="SP908W">
+    SP908W
+  </div>
+
+  <div class="option-group">
+    <input type="radio" name="q2" value="SP391A">
+    SP391A
+  </div>
+
+  <div class="option-group">
+    <input type="radio" name="q2" value="SP925A">
+SP925A
+  </div>
+
+  <div class="option-group">
+    <input type="radio" name="q2" value="SP835A">
+    SP835A
+  </div>
+
+</div>
+
+
+<div class="question-group">
+
+  <label>
+    <strong>Scenario 3 – Urban High Scrubbing</strong><br><br>
+
+    Durban metro distribution fleet using 4x2 rigid trucks with frequent stops, tight turns, uneven loading bays, and high scrubbing conditions.
+
+    <br><br>
+
+    <strong>Question:</strong>
+    Which drive tyre do you recommend?
+  </label>
+
+  <div class="option-group">
+    <input type="radio" name="q3" value="SP320A">
+    SP320A
+  </div>
+
+  <div class="option-group">
+    <input type="radio" name="q3" value="SP835A">
+    SP835A
+  </div>
+
+  <div class="option-group">
+    <input type="radio" name="q3" value="SP431A">
+    SP431A
+  </div>
+
+  <div class="option-group">
+    <input type="radio" name="q3" value="SP160">
+    SP160
+  </div>
+
+</div>
+
+<p
+  id="quizError"
+  class="error-text hidden"
+>
+  Unfortunately one or more answers were incorrect. Better luck next time!
+</p>
+
+<button
+  id="failedCloseBtn"
+  class="hidden"
+>
+  CLOSE SESSION
+</button>
+
+<button id="screen2Btn">
+  SUBMIT ANSWERS
+</button>
+
+    </section>
+
+    <!-- SCREEN 3 -->
+    <!-- Wheel -->
+
+<section id="screen3" class="screen hidden">
+
+  <h1>Spin & Win</h1>
+
+  <div class="wheel-wrapper">
+
+    <div class="pointer"></div>
+
+    <div id="spinWheel" class="wheel">
+
+      <img
+        src="assets/tyre-wheel.png"
+        alt="Spin Wheel"
+      >
+
+      <div class="wheel-segment seg1">🔦</div>
+<div class="wheel-segment seg2">⭐</div>
+<div class="wheel-segment seg3">📱</div>
+<div class="wheel-segment seg4">❌</div>
+<div class="wheel-segment seg5">🧥</div>
+<div class="wheel-segment seg6">🔋</div>
+
+    </div>
+
+    <button id="spinBtn">
+      SPIN
+    </button>
+
+    <div class="wheel-key">
+
+      <div>🔦 Utility Flashlight</div>
+<div>📱 Wireless Charging Phone Stand</div>
+<div>🧥 Jacket</div>
+<div>⭐ Tablet Lucky Draw Entry</div>
+<div>❌ Better Luck Next Time</div>
+<div>🔋 Powerbank</div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SCREEN 4 -->
+    <!-- Results -->
+
+    <section id="screen4" class="screen hidden">
+
+      <div id="resultContainer">
+
+  <h2 id="resultTitle"></h2>
+
+  <p id="resultText"></p>
+
+  <img
+    id="prizeImage"
+    class="hidden"
+    src=""
+    alt="Prize"
+  >
+
+</div>
+
+<button id="screen4Btn">
+  CONTINUE
+</button>
+
+    </section>
+
+    <!-- SCREEN 5 -->
+    <!-- Thank You -->
+
+    <section id="screen5" class="screen hidden">
+
+  <h2>Thank You!</h2>
+
+  <p>
+    Thank you for entering our campaign.
+  </p>
+
+  <p>
+    Where applicable, we will contact you directly to discuss garment size requirements.
+  </p>
+
+  <button id="closeSessionBtn">
+    CLOSE
+  </button>
+
+</section>
+
+  </div>
+
+<!-- TERMS MODAL -->
+
+<div id="termsModal" class="modal">
+
+  <div class="modal-content">
+
+    <h2>
+      Terms, POPIA & Indemnity
+    </h2>
+
+    <div class="modal-scroll">
+
+      <h3>
+        Spin & Win Competition – Terms & Conditions
+      </h3>
+
+      <p>
+        <b>Promoter</b><br>
+        This promotion is run by Sumitomo Rubber South Africa (Pty) Ltd t/a DUNLOP Tyres SA ("the Promoter").
+      </p>
+
+      <p>
+        <b>Eligibility</b><br>
+        Participation is open to residents of South Africa aged 18 years or older.
+      </p>
+
+      <p>
+        <b>How to Enter</b><br>
+        Participants are required to complete the entry form and spin the wheel. Only one entry per person may be permitted unless otherwise stated.
+      </p>
+
+      <p>
+        <b>Prizes</b><br>
+        Prizes are awarded randomly via the digital wheel. Prizes are not transferable and may not be exchanged for cash.
+      </p>
+
+      <p>
+        <b>Use of Personal Information (POPIA Compliance)</b><br>
+        By entering, you consent to the collection and processing of your personal information by the Promoter for the purposes of:
+      </p>
+
+      <ul>
+        <li>Administering the competition</li>
+        <li>Contacting you regarding your prize</li>
+        <li>Marketing communication (where you have opted in)</li>
+      </ul>
+
+      <p>
+        Your information will be processed in accordance with the Protection of Personal Information Act (POPIA) and will not be shared with third parties without your consent, unless required by law.
+      </p>
+
+      <p>
+        <b>Data Security & Retention</b><br>
+        All personal information will be stored securely and retained only for as long as necessary to fulfil the purpose for which it was collected.
+      </p>
+
+      <p>
+        <b>Marketing Consent</b><br>
+        You may opt in to receive marketing communications from DUNLOP Tyres SA. You may unsubscribe at any time.
+      </p>
+
+      <p>
+        <b>Limitation of Liability</b><br>
+        The Promoter is not responsible for any technical errors, system failures, or any loss or damage arising from participation in this promotion.
+      </p>
+
+      <p>
+        <b>Right to Amend</b><br>
+        The Promoter reserves the right to amend or cancel the promotion at any time without prior notice.
+      </p>
+
+      </p>
+
+      <p style="margin-top:20px;">
+        <b>End of Terms</b>
+      </p>
+
+    </div>
+
+    <button id="acceptTerms">
+  I ACCEPT
+</button>
+
+  </div>
+
+</div>
+
+  <script type="module" src="app.js"></script>
+
+</body>
+</html>
