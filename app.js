@@ -211,7 +211,7 @@ async function drawPrize() {
 
 for (
   let i = 0;
-  i < 307;
+  i < 5;
   i++
 ) {
   prizePool.push(
