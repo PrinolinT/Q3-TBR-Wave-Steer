@@ -399,7 +399,7 @@ if (unanswered.length > 0) {
 const answers = {
   q1: "SP320A",
   q2: "SP391A",
-  q3: "SP160"
+  q3: "SP161"
 };
 
     let totalCorrect = 0;
